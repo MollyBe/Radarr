@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using NzbDrone.Common.Extensions;
 using NzbDrone.Core.Datastore;
+using NzbDrone.Core.Languages;
 using NzbDrone.Core.MediaFiles;
 using NzbDrone.Core.Movies.AlternativeTitles;
 using NzbDrone.Core.Profiles;
@@ -60,6 +61,8 @@ namespace NzbDrone.Core.Movies
         public int SecondaryYearSourceId { get; set; }
         public string YouTubeTrailerId { get; set; }
         public string Studio { get; set; }
+        public string OriginalTitle { get; set; }
+        public Language OriginalLanguage { get; set; }
         public List<int> Recommendations { get; set; }
 
         public bool IsRecentMovie
